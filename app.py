@@ -11,8 +11,8 @@ count = 0;
 for row in client_page.iter_rows(min_row=2):
     name = row[0].value
     phone = row[1].value
-    count = count + 1
-    message = f"Olá, {name}, tudo bem?! pode ignorar essa msg, só um teste de envio automatico de msg com foto via python, {count}"
+    message = row[2].value
+#   message = f"Olá, {name}, tudo bem?! pode ignorar essa msg, só um teste de envio automatico de msg com foto via python, {count}"
 
 
    
